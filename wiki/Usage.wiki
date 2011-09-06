@@ -11,7 +11,7 @@ Include it as follows in your application:
     <groupId>com.phloc</groupId>
     <artifactId>parent-pom</artifactId>
     <version>15</version>
-    <relativePath>https://phloc-parent-pom.googlecode.com/trunk/pom.xml</relativePath>
+    <relativePath>http://phloc-parent-pom.googlecode.com/svn/trunk/pom.xml</relativePath>
   </parent>
   ...
 </project>
