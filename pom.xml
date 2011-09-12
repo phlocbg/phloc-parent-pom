@@ -654,7 +654,7 @@
         <artifactId>maven-release-plugin</artifactId>
         <configuration>
           <releaseProfiles>release</releaseProfiles>
-          <goals>javadoc:jar javadoc:test-jar deploy</goals>
+          <goals>javadoc:jar deploy</goals>
         </configuration>
       </plugin>
       <!-- Create build information for all artefacts -->
