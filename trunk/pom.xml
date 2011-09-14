@@ -554,6 +554,20 @@
                     <execute runOnIncremental="false" />
                   </action>
                 </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>com.phloc.mojo</groupId>
+                    <artifactId>jaxws-maven-plugin</artifactId>
+                    <versionRange>[1.0,)</versionRange>
+                    <goals>
+                      <goal>wsimport</goal>
+                      <goal>wsgen</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <execute runOnIncremental="false" />
+                  </action>
+                </pluginExecution>
               </pluginExecutions>
             </lifecycleMappingMetadata>
           </configuration>
