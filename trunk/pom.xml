@@ -547,6 +547,7 @@
                     <versionRange>[1.0,)</versionRange>
                     <goals>
                       <goal>wsimport</goal>
+                      <goal>wsgen</goal>
                     </goals>
                   </pluginExecutionFilter>
                   <action>
