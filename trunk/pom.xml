@@ -517,7 +517,7 @@
                 <pluginExecution>
                   <pluginExecutionFilter>
                     <groupId>org.jvnet.jaxb2.maven2</groupId>
-                    <artifactId>maven-jaxb22-plugin</artifactId>
+                    <artifactId>maven-jaxb2-plugin</artifactId>
                     <versionRange>[0.7,)</versionRange>
                     <goals>
                       <goal>generate</goal>
@@ -530,7 +530,20 @@
                 <pluginExecution>
                   <pluginExecutionFilter>
                     <groupId>org.jvnet.jaxb2.maven2</groupId>
-                    <artifactId>maven-jaxb2-plugin</artifactId>
+                    <artifactId>maven-jaxb21-plugin</artifactId>
+                    <versionRange>[0.7,)</versionRange>
+                    <goals>
+                      <goal>generate</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <execute runOnIncremental="false"/>
+                  </action>
+                </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.jvnet.jaxb2.maven2</groupId>
+                    <artifactId>maven-jaxb22-plugin</artifactId>
                     <versionRange>[0.7,)</versionRange>
                     <goals>
                       <goal>generate</goal>
