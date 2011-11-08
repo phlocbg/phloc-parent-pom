@@ -264,6 +264,9 @@
               <exclude>**/LICENSE</exclude>
               <exclude>**/.pmd</exclude>
               <exclude>**/*.policy</exclude>
+              <exclude>**/*.xls*</exclude>
+              <exclude>**/*.doc*</exclude>
+              <exclude>**/*.ppt*</exclude>
             </excludes>
           </configuration>
         </plugin>
