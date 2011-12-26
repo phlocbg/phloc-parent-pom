@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.phloc</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>17.1-SNAPSHOT</version>
+  <version>17.1</version>
   <packaging>pom</packaging>
   <name>phloc dev parent POM</name>
   <inceptionYear>2006</inceptionYear>
@@ -276,11 +276,13 @@
           <!-- Don't use 2.3.5 as it adds a pseudo classifier "" which prohibits building the sources JAR! -->
           <version>2.3.6</version>
           <extensions>true</extensions>
-          <!--
           <configuration>
-            <excludeDependencies>*;scope=provided|runtime</excludeDependencies>
+            <supportedProjectTypes>
+              <supportedProjectType>jar</supportedProjectType>
+              <supportedProjectType>bundle</supportedProjectType>
+              <supportedProjectType>war</supportedProjectType>
+            </supportedProjectTypes>          
           </configuration>
-          -->
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -584,6 +586,19 @@
                     <ignore />
                   </action>
                 </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.apache.felix</groupId>
+                    <artifactId>maven-bundle-plugin</artifactId>
+                    <versionRange>[1.0.0,)</versionRange>
+                    <goals>
+                      <goal>manifest</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <ignore></ignore>
+                  </action>
+                </pluginExecution>
               </pluginExecutions>
             </lifecycleMappingMetadata>
           </configuration>
@@ -592,20 +607,23 @@
     </pluginManagement>
 
     <extensions>
+      <!-- Whysoever version 2.2 has issues with Maven 3.0.3:
+           java.lang.NoSuchMethodError: org.apache.maven.wagon.shared.http4.AbstractHttpClientWagon.getReadTimeout()I
+      -->
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-ssh</artifactId>
-        <version>2.2</version>
+        <version>2.1</version>
       </extension>
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-http</artifactId>
-        <version>2.2</version>
+        <version>2.1</version>
       </extension>
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
         <artifactId>wagon-file</artifactId>
-        <version>2.2</version>
+        <version>2.1</version>
       </extension>
     </extensions>
 
