@@ -596,7 +596,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore></ignore>
+                    <ignore />
                   </action>
                 </pluginExecution>
               </pluginExecutions>
@@ -696,6 +696,11 @@
         <artifactId>maven-license-plugin</artifactId>
         <configuration>
           <header>src/etc/license-template.txt</header>
+          <excludes>
+            <!-- Default license files -->
+            <exclude>src/main/resources/LICENSE</exclude>
+            <exclude>src/main/resources/NOTICE</exclude>
+          </excludes>
         </configuration>
       </plugin>
       <plugin>
