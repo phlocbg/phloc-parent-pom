@@ -447,7 +447,7 @@
         <plugin>
           <groupId>com.phloc.maven</groupId>
           <artifactId>buildinfo-maven-plugin</artifactId>
-          <version>1.0.8</version>
+          <version>1.0.9</version>
         </plugin>
         <plugin>
           <groupId>com.phloc.maven</groupId>
@@ -458,6 +458,11 @@
           <groupId>com.phloc.maven</groupId>
           <artifactId>csscompress-maven-plugin</artifactId>
           <version>1.0.3</version>
+        </plugin>
+        <plugin>
+          <groupId>com.phloc.maven</groupId>
+          <artifactId>eclipselinkweave-maven-plugin</artifactId>
+          <version>1.0.0</version>
         </plugin>
         <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
         <plugin>
@@ -498,6 +503,19 @@
                     <groupId>com.phloc.maven</groupId>
                     <artifactId>csscompress-maven-plugin</artifactId>
                     <versionRange>[1.0.0-SNAPSHOT,)</versionRange>
+                    <goals>
+                      <goal>csscompress</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <execute runOnIncremental="false"/>
+                  </action>
+                </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>com.phloc.maven</groupId>
+                    <artifactId>eclipselinkweave-maven-plugin</artifactId>
+                    <versionRange>[1.0.0,)</versionRange>
                     <goals>
                       <goal>csscompress</goal>
                     </goals>
