@@ -462,7 +462,34 @@
         <plugin>
           <groupId>com.phloc.maven</groupId>
           <artifactId>eclipselinkweave-maven-plugin</artifactId>
-          <version>1.0.0</version>
+          <version>1.0.1-SNAPSHOT</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>staticweave</goal>
+              </goals>
+              <configuration>
+                <logToSystemOut>true</logToSystemOut>
+                <logLevel>ALL</logLevel>
+              </configuration>
+            </execution>
+          </executions>
+        </plugin>
+        <plugin>
+          <groupId>au.com.alderaan</groupId>
+          <artifactId>eclipselink-staticweave-maven-plugin</artifactId>
+          <version>1.0.2</version>
+          <executions>
+            <execution>
+              <goals>
+                <goal>weave</goal>
+              </goals>
+              <phase>process-classes</phase>
+              <configuration>
+                <logLevel>ALL</logLevel>
+              </configuration>
+            </execution>
+          </executions>
         </plugin>
         <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
         <plugin>
@@ -615,6 +642,19 @@
                   </pluginExecutionFilter>
                   <action>
                     <ignore />
+                  </action>
+                </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>au.com.alderaan</groupId>
+                    <artifactId>eclipselink-staticweave-maven-plugin</artifactId>
+                    <versionRange>[1.0.0,)</versionRange>
+                    <goals>
+                      <goal>weave</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <execute />
                   </action>
                 </pluginExecution>
               </pluginExecutions>
