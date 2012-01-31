@@ -452,7 +452,7 @@
         <plugin>
           <groupId>com.phloc.maven</groupId>
           <artifactId>closure-maven-plugin</artifactId>
-          <version>1.0.5</version>
+          <version>1.0.6</version>
         </plugin>
         <plugin>
           <groupId>com.phloc.maven</groupId>
