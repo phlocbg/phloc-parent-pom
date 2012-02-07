@@ -222,16 +222,6 @@
   
   <repositories>
     <repository>
-      <id>java.net</id>
-      <url>http://download.java.net/maven/2/</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-    <repository>
       <id>phloc.com</id>
       <url>http://repo.phloc.com/maven2</url>
       <releases>
