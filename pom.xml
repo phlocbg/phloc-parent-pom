@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.phloc</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>17.3-SNAPSHOT</version>
+  <version>18</version>
   <packaging>pom</packaging>
   <name>phloc dev parent POM</name>
   <inceptionYear>2006</inceptionYear>
@@ -533,7 +533,20 @@
                     <artifactId>eclipselinkweave-maven-plugin</artifactId>
                     <versionRange>[1.0.0,)</versionRange>
                     <goals>
-                      <goal>csscompress</goal>
+                      <goal>staticweave</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <execute runOnIncremental="false"/>
+                  </action>
+                </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>com.phloc.maven</groupId>
+                    <artifactId>extractres-maven-plugin</artifactId>
+                    <versionRange>[0.9.0,)</versionRange>
+                    <goals>
+                      <goal>extract-resources</goal>
                     </goals>
                   </pluginExecutionFilter>
                   <action>
