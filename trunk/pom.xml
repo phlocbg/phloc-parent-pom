@@ -582,6 +582,19 @@
                 <pluginExecution>
                   <pluginExecutionFilter>
                     <groupId>org.jvnet.jaxb2.maven2</groupId>
+                    <artifactId>maven-jaxb20-plugin</artifactId>
+                    <versionRange>[0.7,)</versionRange>
+                    <goals>
+                      <goal>generate</goal>
+                    </goals>
+                  </pluginExecutionFilter>
+                  <action>
+                    <ignore />
+                  </action>
+                </pluginExecution>
+                <pluginExecution>
+                  <pluginExecutionFilter>
+                    <groupId>org.jvnet.jaxb2.maven2</groupId>
                     <artifactId>maven-jaxb21-plugin</artifactId>
                     <versionRange>[0.7,)</versionRange>
                     <goals>
