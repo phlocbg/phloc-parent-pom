@@ -635,7 +635,7 @@
                 </pluginExecution>
                 <pluginExecution>
                   <pluginExecutionFilter>
-                    <groupId>com.phloc.mojo</groupId>
+                    <groupId>com.phloc.maven</groupId>
                     <artifactId>jaxws-maven-plugin</artifactId>
                     <versionRange>[1.0,)</versionRange>
                     <goals>
