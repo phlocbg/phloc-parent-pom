@@ -452,9 +452,12 @@
         <plugin>
           <groupId>com.phloc.maven</groupId>
           <artifactId>csscompress-maven-plugin</artifactId>
-          <version>1.0.6</version>
+          <version>1.0.7</version>
           <configuration>
+            <forceCompress>false</forceCompress>
             <removeUnnecessaryCode>true</removeUnnecessaryCode>
+            <quoteURLs>false</quoteURLs>
+            <verbose>false</verbose>
           </configuration>
         </plugin>
         <plugin>
