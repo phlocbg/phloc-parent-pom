@@ -252,12 +252,13 @@
             <excludes>
               <exclude>**/NOTICE</exclude>
               <exclude>**/LICENSE</exclude>
-              <exclude>**/.pmd</exclude>
+              <exclude>**/*.pmd</exclude>
               <exclude>**/*.policy</exclude>
               <exclude>**/*.jjt</exclude>
               <exclude>**/*.xls*</exclude>
               <exclude>**/*.doc*</exclude>
               <exclude>**/*.ppt*</exclude>
+              <exclude>**/*.wiki</exclude>
             </excludes>
           </configuration>
         </plugin>
