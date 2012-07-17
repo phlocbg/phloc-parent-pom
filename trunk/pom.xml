@@ -259,6 +259,7 @@
               <exclude>**/*.doc*</exclude>
               <exclude>**/*.ppt*</exclude>
               <exclude>**/*.wiki</exclude>
+              <exclude>**/*.jks</exclude>
             </excludes>
           </configuration>
         </plugin>
