@@ -265,6 +265,7 @@
               <exclude>**/*.ppt*</exclude>
               <exclude>**/*.wiki</exclude>
               <exclude>**/*.jks</exclude>
+              <exclude>**/*.ods</exclude>
             </excludes>
           </configuration>
         </plugin>
