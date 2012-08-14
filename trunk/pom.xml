@@ -266,6 +266,7 @@
               <exclude>**/*.wiki</exclude>
               <exclude>**/*.jks</exclude>
               <exclude>**/*.ods</exclude>
+              <exclude>**/*.swf</exclude>
             </excludes>
           </configuration>
         </plugin>
