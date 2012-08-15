@@ -1,7 +1,7 @@
 = Default profile =
 
   * Assigns default version number for a small number of artefacts (junit, slf4j, jsp-api and servlet-api)
-  * Always depends on JUnit 4.9 in scope _test_
+  * Always depends on JUnit 4.10 in scope _test_
   * Defines other repositories where artefacts should be looked up
   * Supported build plugins are
     * com.mycila.maven-license-plugin:maven-license-plugin
