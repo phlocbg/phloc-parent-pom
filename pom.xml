@@ -257,7 +257,7 @@
           <configuration>
             <header>src/etc/license-template.txt</header>
             <strictCheck>true</strictCheck>
-            <encoding>UTF-8</encoding>
+            <encoding>${project.build.sourceEncoding}</encoding>
             <mapping>
               <gc>XML_STYLE</gc>
               <sch>XML_STYLE</sch>
@@ -395,6 +395,9 @@
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-resources-plugin</artifactId>
           <version>2.6</version>
+          <configuration>
+            <encoding>${project.build.sourceEncoding}</encoding>
+          </configuration>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
