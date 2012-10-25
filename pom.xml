@@ -266,6 +266,7 @@
               <xjb>XML_STYLE</xjb>
               <xslt>XML_STYLE</xslt>
               <xvml>XML_STYLE</xvml>
+              <jav>JAVADOC_STYLE</jav>
             </mapping>
             <excludes>
               <exclude>**/NOTICE</exclude>
