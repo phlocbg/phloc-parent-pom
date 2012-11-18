@@ -281,6 +281,7 @@
               <exclude>**/*.jks</exclude>
               <exclude>**/*.ods</exclude>
               <exclude>**/*.swf</exclude>
+              <exclude>**/*.test</exclude>
             </excludes>
           </configuration>
         </plugin>
