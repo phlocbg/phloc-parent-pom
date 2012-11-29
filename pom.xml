@@ -9,7 +9,7 @@
   <inceptionYear>2006</inceptionYear>
 
   <prerequisites>
-    <maven>3.0.2</maven>
+    <maven>3.0.4</maven>
   </prerequisites>
 
   <properties>
@@ -733,8 +733,9 @@
     </pluginManagement>
 
     <extensions>
-      <!-- Whysoever version 2.2 has issues with Maven 3.0.3:
+      <!-- Whysoever version 2.2 and 2.3 has issues with Maven 3.0.3:
            java.lang.NoSuchMethodError: org.apache.maven.wagon.shared.http4.AbstractHttpClientWagon.getReadTimeout()I
+           I as far as I found out, upgrading to Maven 3.0.4 should help (because aether 1.13.1 is used)
       -->
       <extension>
         <groupId>org.apache.maven.wagon</groupId>
