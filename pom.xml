@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.phloc</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>22.1-SNAPSHOT</version>
+  <version>22.1</version>
   <packaging>pom</packaging>
   <name>phloc dev parent POM</name>
   <inceptionYear>2006</inceptionYear>
@@ -284,9 +284,16 @@
           <version>2.5</version>
         </plugin>
         <plugin>
+          <!-- Seems like 3.0 has issues with Jenkins 1.492???
+[ERROR] COMPILATION ERROR : 
+[ERROR] /D:/webapps/hudson/.hudson/jobs/OSS phloc-css/workspace/trunk/src/test/java/com/phloc/css/writer/CSSWriterTest.java:[29,21] D:\webapps\hudson\.hudson\jobs\OSS phloc-css\workspace\trunk\src\test\java\com\phloc\css\writer\CSSWriterTest.java:29: cannot access com.phloc.css.ECSSVersion
+bad class file: D:\webapps\hudson\.hudson\jobs\OSS phloc-css\workspace\trunk\target\generated-classes\cobertura\com\phloc\css\ECSSVersion.class
+bad RuntimeInvisibleParameterAnnotations attribute: ECSSVersion(com.phloc.commons.version.Version)
+Please remove or make sure it appears in the correct subdirectory of the classpath. 
+          -->
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-compiler-plugin</artifactId>
-          <version>3.0</version>
+          <version>2.5.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
