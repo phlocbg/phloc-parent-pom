@@ -86,7 +86,7 @@
     <profile>
       <id>hudson</id>
       <activation>
-        <!-- Hudson by default defines a property BUILD_NUMBER which is used to enable the profile. -->
+        <!-- Hudson/Jenkins by default defines a property BUILD_NUMBER which is used to enable the profile. -->
         <property>
           <name>env.BUILD_NUMBER</name>
         </property>
@@ -138,37 +138,6 @@
             <configuration>
               <outputXML>true</outputXML>
             </configuration>
-          </plugin>
-        </plugins>
-      </build>
-    </profile>
-    <profile>
-      <!-- Call "mvn -Pjdk5 ...." for building 1.5 compliant stuff -->
-      <id>jdk5</id>
-      <build>
-        <plugins>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-              <source>1.5</source>
-              <target>1.5</target>
-            </configuration>
-          </plugin>
-          <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-jar-plugin</artifactId>
-            <executions>
-              <execution>
-                <phase>package</phase>
-                <goals>
-                  <goal>jar</goal>
-                </goals>
-                <configuration>
-                  <classifier>jdk5</classifier>
-                </configuration>
-              </execution>
-            </executions>    
           </plugin>
         </plugins>
       </build>
