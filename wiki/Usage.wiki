@@ -3,7 +3,7 @@
 
 = Introduction =
 
-phloc-parent-pom is a parent POM for [http://maven.apache.org Maven 3.x] and Java 1.6. It offers integration into m2eclipse for some plugins.
+phloc-parent-pom is a parent POM for [http://maven.apache.org Maven 3.0.4] and Java 1.6. It offers integration into m2eclipse for some plugins.
 
 Include it as follows in your application in case you checked out this projects trunk in the directory "phloc-parent-pom":
 {{{
@@ -11,7 +11,7 @@ Include it as follows in your application in case you checked out this projects 
   <parent>
     <groupId>com.phloc</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>21</version>
+    <version>22.1</version>
     <relativePath>../phloc-parent-pom/pom.xml</relativePath>
   </parent>
   ...
