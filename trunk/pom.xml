@@ -88,7 +88,7 @@
       <activation>
         <!-- Hudson by default defines a property BUILD_NUMBER which is used to enable the profile. -->
         <property>
-          <name>BUILD_NUMBER</name>
+          <name>env.BUILD_NUMBER</name>
         </property>
       </activation>
       <build>
