@@ -230,13 +230,14 @@
             <encoding>${project.build.sourceEncoding}</encoding>
             <mapping>
               <gc>XML_STYLE</gc>
+              <jav>JAVADOC_STYLE</jav>
+              <jjt>JAVADOC_STYLE</jjt>
               <sch>XML_STYLE</sch>
               <svxml>XML_STYLE</svxml>
               <wsdl>XML_STYLE</wsdl>
               <xjb>XML_STYLE</xjb>
               <xslt>XML_STYLE</xslt>
               <xvml>XML_STYLE</xvml>
-              <jav>JAVADOC_STYLE</jav>
             </mapping>
             <excludes>
               <exclude>**/NOTICE</exclude>
