@@ -355,7 +355,7 @@ Please remove or make sure it appears in the correct subdirectory of the classpa
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-pmd-plugin</artifactId>
-          <version>2.7.1</version>
+          <version>3.0</version>
         </plugin>  
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
