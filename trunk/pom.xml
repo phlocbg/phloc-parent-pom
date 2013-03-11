@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.phloc</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>22.4-SNAPSHOT</version>
+  <version>22.4</version>
   <packaging>pom</packaging>
   <name>phloc dev parent POM</name>
   <inceptionYear>2006</inceptionYear>
@@ -809,7 +809,7 @@ Please remove or make sure it appears in the correct subdirectory of the classpa
         <artifactId>maven-release-plugin</artifactId>
         <configuration>
           <releaseProfiles>release</releaseProfiles>
-          <goals>javadoc:jar deploy</goals>
+          <goals>process-resources javadoc:jar deploy</goals>
         </configuration>
       </plugin>
       <!-- Create build information for all artefacts -->
