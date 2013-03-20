@@ -546,6 +546,7 @@ Please remove or make sure it appears in the correct subdirectory of the classpa
                     <artifactId>javacc-maven-plugin</artifactId>
                     <versionRange>[2.0,)</versionRange>
                     <goals>
+                      <goal>javacc</goal>
                       <goal>jjtree-javacc</goal>
                     </goals>
                   </pluginExecutionFilter>
