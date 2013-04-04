@@ -334,6 +334,11 @@ Please remove or make sure it appears in the correct subdirectory of the classpa
           <version>1.4</version>
         </plugin>
         <plugin>
+	        <groupId>org.apache.maven.plugins</groupId>
+	        <artifactId>maven-idea-plugin</artifactId>
+	        <version>2.2</version>
+	      </plugin>  
+	      <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-install-plugin</artifactId>
           <version>2.4</version>
@@ -789,6 +794,16 @@ Please remove or make sure it appears in the correct subdirectory of the classpa
         <configuration>
           <releaseProfiles>release</releaseProfiles>
           <goals>process-resources javadoc:jar deploy</goals>
+        </configuration>
+      </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-idea-plugin</artifactId>
+        <configuration>
+          <jdkLevel>1.6</jdkLevel>
+          <linkModules>true</linkModules>
+          <downloadSources>true</downloadSources>
+          <downloadJavadocs>true</downloadJavadocs>
         </configuration>
       </plugin>
       <!-- Create build information for all artefacts -->
