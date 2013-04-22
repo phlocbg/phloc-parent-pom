@@ -11,7 +11,7 @@ Include it as follows in your application in case you checked out this projects 
   <parent>
     <groupId>com.phloc</groupId>
     <artifactId>parent-pom</artifactId>
-    <version>22.4</version>
+    <version>22.5</version>
     <relativePath>../phloc-parent-pom/pom.xml</relativePath>
   </parent>
   ...
