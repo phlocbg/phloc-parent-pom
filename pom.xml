@@ -485,7 +485,7 @@ Please remove or make sure it appears in the correct subdirectory of the classpa
         <plugin>
           <groupId>com.phloc.maven</groupId>
           <artifactId>dirindex-maven-plugin</artifactId>
-          <version>1.0.0</version>
+          <version>1.0.1</version>
         </plugin>
         <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
         <plugin>
@@ -544,7 +544,7 @@ Please remove or make sure it appears in the correct subdirectory of the classpa
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <ignore />
+                    <execute runOnIncremental="false"/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
