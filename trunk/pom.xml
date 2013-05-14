@@ -496,7 +496,7 @@ Please remove or make sure it appears in the correct subdirectory of the classpa
         <plugin>
           <groupId>com.phloc.maven</groupId>
           <artifactId>closure-maven-plugin</artifactId>
-          <version>1.0.7</version>
+          <version>1.0.8</version>
         </plugin>
         <plugin>
           <groupId>com.phloc.maven</groupId>
