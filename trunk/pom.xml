@@ -278,11 +278,15 @@
             <excludes>
               <exclude>**/NOTICE</exclude>
               <exclude>**/LICENSE</exclude>
+              <exclude>**/*.cer</exclude>
               <exclude>**/*.csv</exclude>
               <exclude>**/*.doc*</exclude>
               <exclude>**/*.jjt</exclude>
               <exclude>**/*.jks</exclude>
+              <exclude>**/*.min.css</exclude>
+              <exclude>**/*.min.js</exclude>
               <exclude>**/*.ods</exclude>
+              <exclude>**/*.p12</exclude>
               <exclude>**/*.pmd</exclude>
               <exclude>**/*.policy</exclude>
               <exclude>**/*.ppt*</exclude>
@@ -290,8 +294,6 @@
               <exclude>**/*.test</exclude>
               <exclude>**/*.wiki</exclude>
               <exclude>**/*.xls*</exclude>
-              <exclude>**/*.min.css</exclude>
-              <exclude>**/*.min.js</exclude>
             </excludes>
           </configuration>
         </plugin>
