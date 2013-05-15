@@ -278,21 +278,38 @@
             <excludes>
               <exclude>**/NOTICE</exclude>
               <exclude>**/LICENSE</exclude>
+              <!-- Certificate file -->
               <exclude>**/*.cer</exclude>
+              <!-- CSV files -->
               <exclude>**/*.csv</exclude>
+              <!-- Binary word documents -->
               <exclude>**/*.doc*</exclude>
+              <!-- JJTree input files -->
               <exclude>**/*.jjt</exclude>
+              <!-- Java KeyStore files -->
               <exclude>**/*.jks</exclude>
+              <!-- Minified CSS/JS files - usually generated -->
               <exclude>**/*.min.css</exclude>
               <exclude>**/*.min.js</exclude>
+              <!-- Open Document file -->
               <exclude>**/*.ods</exclude>
+              <!-- Certificate file -->
               <exclude>**/*.p12</exclude>
+              <!-- PMD configuration file -->
               <exclude>**/*.pmd</exclude>
+              <!-- Policy file -->
               <exclude>**/*.policy</exclude>
+              <!-- Powerpoint files -->
               <exclude>**/*.ppt*</exclude>
+              <!-- Binary Flash files -->
               <exclude>**/*.swf</exclude>
+              <!-- Files marked as test -->
               <exclude>**/*.test</exclude>
+              <!-- Generic text documents -->
+              <exclude>**/*.txt</exclude>
+              <!-- Wiki source files -->
               <exclude>**/*.wiki</exclude>
+              <!-- Excel files -->
               <exclude>**/*.xls*</exclude>
             </excludes>
           </configuration>
