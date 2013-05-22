@@ -485,7 +485,8 @@ Please remove or make sure it appears in the correct subdirectory of the classpa
           <groupId>org.codehaus.mojo</groupId>
           <artifactId>taglist-maven-plugin</artifactId>
           <version>2.4</version>
-        </plugin>  
+        </plugin>
+        <!--   
         <plugin>
           <groupId>com.phloc.maven</groupId>
           <artifactId>buildinfo-maven-plugin</artifactId>
@@ -512,6 +513,7 @@ Please remove or make sure it appears in the correct subdirectory of the classpa
           <artifactId>dirindex-maven-plugin</artifactId>
           <version>1.0.3</version>
         </plugin>
+         -->
         <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
         <plugin>
           <groupId>org.eclipse.m2e</groupId>
@@ -813,6 +815,7 @@ Please remove or make sure it appears in the correct subdirectory of the classpa
         </configuration>
       </plugin>
       <!-- Create build information for all artefacts -->
+      <!-- 
       <plugin>
         <groupId>com.phloc.maven</groupId>
         <artifactId>buildinfo-maven-plugin</artifactId>
@@ -837,6 +840,7 @@ Please remove or make sure it appears in the correct subdirectory of the classpa
           </selectedEnvVars>
         </configuration>
       </plugin>
+       -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-site-plugin</artifactId>
