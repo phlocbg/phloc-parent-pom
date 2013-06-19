@@ -500,7 +500,7 @@ Please remove or make sure it appears in the correct subdirectory of the classpa
         <plugin>
           <groupId>com.phloc.maven</groupId>
           <artifactId>csscompress-maven-plugin</artifactId>
-          <version>1.0.14</version>
+          <version>1.0.15</version>
           <configuration>
             <forceCompress>false</forceCompress>
             <removeUnnecessaryCode>true</removeUnnecessaryCode>
