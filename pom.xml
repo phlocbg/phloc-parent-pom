@@ -271,9 +271,9 @@
     <pluginManagement>
       <plugins>
         <plugin>
-          <groupId>com.mycila.maven-license-plugin</groupId>
-          <artifactId>maven-license-plugin</artifactId>
-          <version>1.10.b1</version>
+          <groupId>com.mycila</groupId>
+          <artifactId>license-maven-plugin</artifactId>
+          <version>2.6</version>
           <configuration>
             <header>src/etc/license-template.txt</header>
             <strictCheck>true</strictCheck>
@@ -284,6 +284,7 @@
               <jav>JAVADOC_STYLE</jav>
               <jjt>JAVADOC_STYLE</jjt>
               <sch>XML_STYLE</sch>
+              <svg>XML_STYLE</svg>
               <svxml>XML_STYLE</svxml>
               <wsdl>XML_STYLE</wsdl>
               <xjb>XML_STYLE</xjb>
@@ -299,6 +300,8 @@
               <exclude>**/*.csv</exclude>
               <!-- Binary word documents -->
               <exclude>**/*.doc*</exclude>
+              <!-- Font files -->
+              <exclude>**/*.eot</exclude>
               <!-- JJTree input files -->
               <exclude>**/*.jjt</exclude>
               <!-- Java KeyStore files -->
@@ -308,6 +311,8 @@
               <exclude>**/*.min.js</exclude>
               <!-- Open Document file -->
               <exclude>**/*.ods</exclude>
+              <!-- OpenType fonts -->
+              <exclude>**/*.otf</exclude>
               <!-- Certificate file -->
               <exclude>**/*.p12</exclude>
               <!-- PDF file -->
@@ -322,10 +327,14 @@
               <exclude>**/*.swf</exclude>
               <!-- Files marked as test -->
               <exclude>**/*.test</exclude>
+              <!-- TrueType fonts -->
+              <exclude>**/*.ttf</exclude>
               <!-- Generic text documents -->
               <exclude>**/*.txt</exclude>
               <!-- Wiki source files -->
               <exclude>**/*.wiki</exclude>
+              <!-- Font files -->
+              <exclude>**/*.woff</exclude>
               <!-- Excel files -->
               <exclude>**/*.xls*</exclude>
             </excludes>
