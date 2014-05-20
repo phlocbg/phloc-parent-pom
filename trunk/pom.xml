@@ -1,16 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <!-- [OSS] Enable for OSS 
-  <parent>
-    <groupId>org.sonatype.oss</groupId>
-    <artifactId>oss-parent</artifactId>
-    <version>9</version>
-  </parent>
-  -->
   <groupId>com.phloc</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>24-SNAPSHOT</version>
+  <version>23.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>phloc dev parent POM</name>
   <inceptionYear>2006</inceptionYear>
@@ -252,34 +245,6 @@
       <scope>test</scope>
     </dependency>
   </dependencies>
-  
-  <!-- [OSS] Not for OSS version 
-  <repositories>
-    <repository>
-      <id>phloc.com</id>
-      <url>http://repo.phloc.com/maven2</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>true</enabled>
-      </snapshots>
-    </repository>
-  </repositories>
-
-  <pluginRepositories>
-    <pluginRepository>
-      <id>phloc.com</id>
-      <url>http://repo.phloc.com/maven2</url>
-      <releases>
-        <enabled>true</enabled>
-      </releases>
-      <snapshots>
-        <enabled>false</enabled>
-      </snapshots>
-    </pluginRepository>
-  </pluginRepositories>
-   -->  
 
   <!-- Build plugins -->
   <build>
@@ -574,12 +539,17 @@
           <artifactId>taglist-maven-plugin</artifactId>
           <version>2.4</version>
         </plugin>
-        <!-- [OSS] Disable the next 4 plugins
         <plugin>
           <groupId>com.phloc.maven</groupId>
           <artifactId>buildinfo-maven-plugin</artifactId>
-          <version>1.1.1</version>
+          <version>1.1.2</version>
         </plugin>
+        <plugin>
+          <groupId>com.phloc.maven</groupId>
+          <artifactId>dirindex-maven-plugin</artifactId>
+          <version>1.0.4</version>
+        </plugin>
+        <!-- [OSS] Disable the next 4 plugins
         <plugin>
           <groupId>com.phloc.maven</groupId>
           <artifactId>closure-maven-plugin</artifactId>
@@ -595,11 +565,6 @@
             <quoteURLs>true</quoteURLs>
             <verbose>false</verbose>
           </configuration>
-        </plugin>
-        <plugin>
-          <groupId>com.phloc.maven</groupId>
-          <artifactId>dirindex-maven-plugin</artifactId>
-          <version>1.0.3</version>
         </plugin>
          -->
         <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
