@@ -6,12 +6,22 @@
   <version>23.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>phloc dev parent POM</name>
+  <description>Generic phloc parent POM for Java 1.6 applications</description>
+  <url>https://code.google.com/p/phloc-parent-pom/</url>
   <inceptionYear>2006</inceptionYear>
 
   <!-- Minimum Maven version -->
   <prerequisites>
     <maven>3.0.4</maven>
   </prerequisites>
+  
+  <licenses>
+    <license>
+      <name>Apache 2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
 
   <scm>
     <url>http://code.google.com/p/phloc-parent-pom/source/browse/</url>
@@ -549,16 +559,15 @@
           <artifactId>dirindex-maven-plugin</artifactId>
           <version>1.0.4</version>
         </plugin>
-        <!-- [OSS] Disable the next 4 plugins
         <plugin>
           <groupId>com.phloc.maven</groupId>
           <artifactId>closure-maven-plugin</artifactId>
-          <version>1.0.9</version>
+          <version>1.0.10</version>
         </plugin>
         <plugin>
           <groupId>com.phloc.maven</groupId>
           <artifactId>csscompress-maven-plugin</artifactId>
-          <version>1.2.0</version>
+          <version>1.2.1</version>
           <configuration>
             <forceCompress>false</forceCompress>
             <removeUnnecessaryCode>true</removeUnnecessaryCode>
@@ -566,7 +575,6 @@
             <verbose>false</verbose>
           </configuration>
         </plugin>
-         -->
         <!--This plugin's configuration is used to store Eclipse m2e settings only. It has no influence on the Maven build itself.-->
         <plugin>
           <groupId>org.eclipse.m2e</groupId>
