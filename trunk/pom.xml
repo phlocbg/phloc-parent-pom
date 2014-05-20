@@ -10,7 +10,7 @@
   -->
   <groupId>com.phloc</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>23-SNAPSHOT</version>
+  <version>23</version>
   <packaging>pom</packaging>
   <name>phloc dev parent POM</name>
   <inceptionYear>2006</inceptionYear>
@@ -21,9 +21,9 @@
   </prerequisites>
 
   <scm>
-    <url>http://code.google.com/p/phloc-parent-pom/source/browse/</url>
-    <connection>scm:svn:http://phloc-parent-pom.googlecode.com/svn/trunk</connection>
-    <developerConnection>scm:svn:https://phloc-parent-pom.googlecode.com/svn/trunk</developerConnection>
+    <url>http://code.google.com/p/phloc-parent-pom/source/browse/tags/parent-pom-23</url>
+    <connection>scm:svn:http://phloc-parent-pom.googlecode.com/svn/tags/parent-pom-23</connection>
+    <developerConnection>scm:svn:https://phloc-parent-pom.googlecode.com/svn/tags/parent-pom-23</developerConnection>
   </scm>
 
   <properties>
@@ -633,7 +633,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute runOnIncremental="false"/>
+                    <execute runOnIncremental="false" />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -646,7 +646,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute runOnIncremental="false"/>
+                    <execute runOnIncremental="false" />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -659,7 +659,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute runOnIncremental="false"/>
+                    <execute runOnIncremental="false" />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -686,7 +686,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute runOnIncremental="false"/>
+                    <execute runOnIncremental="false" />
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -820,7 +820,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute runOnIncremental="false"/>
+                    <execute runOnIncremental="false" />
                   </action>
                 </pluginExecution>
               </pluginExecutions>
