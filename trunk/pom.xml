@@ -9,7 +9,7 @@
   </parent>
   <groupId>com.phloc</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>24-SNAPSHOT</version>
+  <version>23-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>phloc dev parent POM</name>
   <inceptionYear>2006</inceptionYear>
@@ -607,7 +607,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute runOnIncremental="false" />
+                    <execute runOnIncremental="false"/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -620,7 +620,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute runOnIncremental="false" />
+                    <execute runOnIncremental="false"/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -633,7 +633,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute runOnIncremental="false" />
+                    <execute runOnIncremental="false"/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -660,7 +660,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute runOnIncremental="false" />
+                    <execute runOnIncremental="false"/>
                   </action>
                 </pluginExecution>
                 <pluginExecution>
@@ -794,7 +794,7 @@
                     </goals>
                   </pluginExecutionFilter>
                   <action>
-                    <execute runOnIncremental="false" />
+                    <execute runOnIncremental="false"/>
                   </action>
                 </pluginExecution>
               </pluginExecutions>
