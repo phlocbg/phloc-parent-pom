@@ -13,12 +13,22 @@
   <version>23</version>
   <packaging>pom</packaging>
   <name>phloc dev parent POM</name>
+  <description>Generic phloc parent POM for Java 1.6 applications</description>
+  <url>https://code.google.com/p/phloc-parent-pom/</url>
   <inceptionYear>2006</inceptionYear>
 
   <!-- Minimum Maven version -->
   <prerequisites>
     <maven>3.0.4</maven>
   </prerequisites>
+  
+  <licenses>
+    <license>
+      <name>Apache 2</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
 
   <scm>
     <url>http://code.google.com/p/phloc-parent-pom/source/browse/tags/parent-pom-23</url>
