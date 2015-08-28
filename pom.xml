@@ -3,11 +3,11 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.phloc</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>23.3-SNAPSHOT</version>
+  <version>24.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>phloc dev parent POM</name>
   <description>Generic phloc parent POM for Java 1.6 applications</description>
-  <url>https://code.google.com/p/phloc-parent-pom/</url>
+  <url>http://github.com/phlocbg/phloc-parent-pom/</url>
   <inceptionYear>2006</inceptionYear>
 
   <!-- Minimum Maven version -->
@@ -24,9 +24,9 @@
   </licenses>
 
   <scm>
-    <url>http://code.google.com/p/phloc-parent-pom/source/browse/</url>
-    <connection>scm:svn:http://phloc-parent-pom.googlecode.com/svn/trunk</connection>
-    <developerConnection>scm:svn:https://phloc-parent-pom.googlecode.com/svn/trunk</developerConnection>
+    <connection>scm:git:https://github.com/phlocbg/phloc-parent-pom</connection>
+    <developerConnection>scm:git:https://github.com/phlocbg/phloc-parent-pom</developerConnection>
+    <url>http://github.com/phlocbg/phloc-parent-pom</url>
   </scm>
 
   <properties>
