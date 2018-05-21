@@ -6,7 +6,7 @@
   <version>24.1-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>phloc dev parent POM</name>
-  <description>Generic phloc parent POM for Java 1.6 applications</description>
+  <description>Generic phloc parent POM for Java 1.7 applications</description>
   <url>http://github.com/phlocbg/phloc-parent-pom/</url>
   <inceptionYear>2006</inceptionYear>
 
@@ -34,7 +34,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>4.12</junit.version>
     <slf4j.version>1.7.10</slf4j.version>
-    <servlet-api.version>2.5</servlet-api.version>
+    <servlet-api.version>3.0</servlet-api.version>
     <javax.servlet-api.version>3.0.1</javax.servlet-api.version>
     <jsp-api.version>2.1</jsp-api.version>
   </properties>
@@ -802,7 +802,7 @@
     </pluginManagement>
 
     <plugins>
-      <!-- Compile as Java 1.6 code (lifecycle: compile) -->
+      <!-- Compile as Java 1.7 code (lifecycle: compile) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -810,8 +810,8 @@
           <!-- fork needs to be false to compile JAXB resources. Otherwise 
             the problem with the forward slash in package-info.java on Windows occurs! -->
           <fork>false</fork>
-          <source>1.6</source>
-          <target>1.6</target>
+          <source>1.7</source>
+          <target>1.7</target>
           <showWarnings>true</showWarnings>
           <maxmem>768m</maxmem>
           <compilerArguments>
