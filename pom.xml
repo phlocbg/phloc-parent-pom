@@ -6,7 +6,7 @@
   <version>24.3-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>phloc dev parent POM</name>
-  <description>Generic phloc parent POM for Java 1.7 applications</description>
+  <description>Generic phloc parent POM for Java 1.8 applications</description>
   <url>http://github.com/phlocbg/phloc-parent-pom/</url>
   <inceptionYear>2006</inceptionYear>
 
