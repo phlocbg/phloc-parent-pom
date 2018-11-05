@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.phloc</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>24.3-SNAPSHOT</version>
+  <version>24.3</version>
   <packaging>pom</packaging>
   <name>phloc dev parent POM</name>
   <description>Generic phloc parent POM for Java 1.8 applications</description>
@@ -27,7 +27,7 @@
     <connection>scm:git:https://github.com/phlocbg/phloc-parent-pom</connection>
     <developerConnection>scm:git:https://github.com/phlocbg/phloc-parent-pom</developerConnection>
     <url>http://github.com/phlocbg/phloc-parent-pom</url>
-    <tag>HEAD</tag>
+    <tag>parent-pom-24.3</tag>
   </scm>
 
   <properties>
