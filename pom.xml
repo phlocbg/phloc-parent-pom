@@ -802,7 +802,7 @@
     </pluginManagement>
 
     <plugins>
-      <!-- Compile as Java 1.7 code (lifecycle: compile) -->
+      <!-- Compile as Java 1.8 code (lifecycle: compile) -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -810,8 +810,8 @@
           <!-- fork needs to be false to compile JAXB resources. Otherwise 
             the problem with the forward slash in package-info.java on Windows occurs! -->
           <fork>false</fork>
-          <source>1.7</source>
-          <target>1.7</target>
+          <source>1.8</source>
+          <target>1.8</target>
           <showWarnings>true</showWarnings>
           <maxmem>768m</maxmem>
           <compilerArguments>
