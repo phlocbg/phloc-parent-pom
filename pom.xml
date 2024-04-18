@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.phloc</groupId>
   <artifactId>parent-pom</artifactId>
-  <version>24.4-SNAPSHOT</version>
+  <version>25.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>phloc dev parent POM</name>
   <description>Generic phloc parent POM for Java 1.8 applications</description>
@@ -34,8 +34,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <junit.version>4.12</junit.version>
     <slf4j.version>1.7.10</slf4j.version>
-    <servlet-api.version>2.5</servlet-api.version>
-    <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
+    <servlet-api.version>6.0.0</servlet-api.version>
     <jsp-api.version>2.1</jsp-api.version>
   </properties>
 
@@ -155,8 +154,8 @@
                 <version>${slf4j.version}</version>
               </dependency>
               <dependency>
-                <groupId>javax.servlet</groupId>
-                <artifactId>servlet-api</artifactId>
+                <groupId>jakarta.servlet</groupId>
+                <artifactId>jakarta.servlet-api</artifactId>
                 <version>${servlet-api.version}</version>
               </dependency>
             </dependencies>
@@ -200,14 +199,9 @@
       </dependency>
       <!-- Global Web Stuff; important to use Servlet API 2.5 -->
       <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>servlet-api</artifactId>
+        <groupId>jakarta.servlet</groupId>
+        <artifactId>jakarta.servlet-api</artifactId>
         <version>${servlet-api.version}</version>
-      </dependency>
-      <dependency>
-        <groupId>javax.servlet</groupId>
-        <artifactId>javax.servlet-api</artifactId>
-        <version>${javax.servlet-api.version}</version>
       </dependency>
       <dependency>
         <groupId>javax.servlet.jsp</groupId>
@@ -358,7 +352,7 @@
         <plugin>
           <groupId>org.apache.felix</groupId>
           <artifactId>maven-bundle-plugin</artifactId>
-          <version>2.5.3</version>
+          <version>5.1.8</version>
           <extensions>true</extensions>
           <configuration>
             <supportedProjectTypes>
@@ -810,8 +804,8 @@
           <!-- fork needs to be false to compile JAXB resources. Otherwise 
             the problem with the forward slash in package-info.java on Windows occurs! -->
           <fork>false</fork>
-          <source>1.8</source>
-          <target>1.8</target>
+          <source>17</source>
+          <target>17</target>
           <showWarnings>true</showWarnings>
           <maxmem>768m</maxmem>
           <compilerArguments>
